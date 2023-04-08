@@ -8,6 +8,7 @@
 .cube-1 {
   transform-style: preserve-3d;
   animation: rotate 4s infinite;
+	transform:matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
 }
 .back {
   transform: translateZ(-100px);
@@ -29,7 +30,7 @@
   transform: rotateX(90deg) translateZ(100px);
 }
 .front{
-	transform:matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+	transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
 }
 body {
   display: flex;

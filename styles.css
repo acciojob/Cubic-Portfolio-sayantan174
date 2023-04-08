@@ -1,2 +1,44 @@
-
-/* Your CSS Code here. */
+.face {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  position: absolute;
+  border: 1px solid black;
+}
+.cube {
+  transform-style: preserve-3d;
+  animation: rotate 4s infinite;
+}
+.face2 {
+  transform: translateZ(-100px);
+}
+.face3 {
+  transform-origin: top left;
+  transform: rotateY(90deg);
+}
+.face4 {
+  transform-origin: top right;
+  transform: rotateY(-90deg);
+}
+.face5 {
+  transform-origin: bottom;
+  transform: rotateX(90deg);
+}
+.face6 {
+  transform-origin: bottom;
+  transform: rotateX(90deg) translateZ(100px);
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+@keyframes rotate {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}

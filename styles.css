@@ -5,28 +5,31 @@
   position: absolute;
   border: 1px solid black;
 }
-.cube {
+.cube-1 {
   transform-style: preserve-3d;
   animation: rotate 4s infinite;
 }
-.face2 {
+.back {
   transform: translateZ(-100px);
 }
-.face3 {
+.left {
   transform-origin: top left;
   transform: rotateY(90deg);
 }
-.face4 {
+.right {
   transform-origin: top right;
   transform: rotateY(-90deg);
 }
-.face5 {
+.bottom {
   transform-origin: bottom;
   transform: rotateX(90deg);
 }
-.face6 {
+.top {
   transform-origin: bottom;
   transform: rotateX(90deg) translateZ(100px);
+}
+.front{
+	
 }
 body {
   display: flex;
